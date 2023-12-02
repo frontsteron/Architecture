@@ -12,33 +12,35 @@ public class TicketProvider {
     public TicketProvider(
             Database database,
             PaymentProvider paymentProvider
-    ){
+    ) {
         this.database = database;
         this.paymentProvider = paymentProvider;
     }
 
-    public Collection<Ticket> searchTicket(int clientId, Date date){
-
+    public Collection<Ticket> searchTicket(int clientId, Date date) {
         Collection<Ticket> tickets = new ArrayList<>();
-        for (Ticket ticket: database.getTickets()) {
-            if (ticket.getCustomerId() == clientId && ticket.getDate().equals(date))
+        for (Ticket ticket : database.getTickets()) {
+            if (ticketMatches(ticket, clientId, date)) {
                 tickets.add(ticket);
+            }
         }
         return tickets;
     }
 
-    public boolean buyTicket(int clientId, String cardNo){
-
-        int orderId = database.createTicketOrder(clientId);
-        double amount = database.getTicketAmount();
-        return paymentProvider.buyTicket(orderId,  cardNo, amount);
-
+    private boolean ticketMatches(Ticket ticket, int clientId, Date date) {
+        return ticket.getCustomerId() == clientId && ticket.getDate().equals(date);
     }
 
-    public boolean checkTicket(String qrcode){
-        for (Ticket ticket: database.getTickets()) {
-            if (ticket.getQrcode().equals(qrcode)){
-                ticket.setEnable(false);
+    public boolean buyTicket(int clientId, String cardNo) {
+        int orderId = database.createTicketOrder(clientId);
+        double amount = database.getTicketAmount();
+        return paymentProvider.buyTicket(orderId, cardNo, amount);
+    }
+
+    public boolean checkTicket(String qrcode) {
+        for (Ticket ticket : database.getTickets()) {
+            if (ticketMatchesQrCode(ticket, qrcode)) {
+                disableTicket(ticket);
                 // Save database ...
                 return true;
             }
@@ -46,4 +48,11 @@ public class TicketProvider {
         return false;
     }
 
+    private boolean ticketMatchesQrCode(Ticket ticket, String qrcode) {
+        return ticket.getQrcode().equals(qrcode);
+    }
+
+    private void disableTicket(Ticket ticket) {
+        ticket.setEnable(false);
+    }
 }
