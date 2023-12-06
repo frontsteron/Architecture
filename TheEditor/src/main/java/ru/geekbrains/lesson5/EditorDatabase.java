@@ -2,6 +2,7 @@ package ru.geekbrains.lesson5;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.Random;
 
 public class EditorDatabase implements Database {
@@ -41,6 +42,11 @@ public class EditorDatabase implements Database {
     @Override
     public void addModel(Model3D model) {
         entities.add(model);
+    }
+
+    @Override
+    public void removeModel(Model3D model) {
+        entities.remove(model);
     }
 
     private void generateModelAndTextures() {
