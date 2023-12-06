@@ -11,7 +11,7 @@ public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
 
     private DatabaseAccess databaseAccess;
 
-    public EditorBusinessLogicalLayer(DatabaseAccess databaseAccess){
+    public EditorBusinessLogicalLayer(DatabaseAccess databaseAccess) {
         this.databaseAccess = databaseAccess;
     }
 
@@ -32,19 +32,23 @@ public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
 
     @Override
     public void renderAllModels() {
-        for (Model3D model: getAllModels()) {
+        for (Model3D model : getAllModels()) {
             processRender(model);
         }
     }
 
+    @Override
+    public void addNewModel(Model3D model) {
+        databaseAccess.addModel(model);
+    }
+
     private Random random = new Random();
-    private void processRender(Model3D model){
+
+    private void processRender(Model3D model) {
         try {
             Thread.sleep(2500 - random.nextInt(2000));
-        }
-        catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
-
 }
