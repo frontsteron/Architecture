@@ -38,7 +38,7 @@ public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
     }
 
     @Override
-    public void addNewModel(Model3D model) {
+    public void addModel(Model3D model) {
         databaseAccess.addModel(model);
     }
 
