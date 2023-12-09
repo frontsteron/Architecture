@@ -71,6 +71,6 @@ public class Note {
     public void setDetails(String details) {
         this.details = details;
     }
-
-
+    public interface NoteDeleter {
+    void deleteNote(int noteId);
 }
