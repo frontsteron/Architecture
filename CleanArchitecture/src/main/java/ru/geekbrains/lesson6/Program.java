@@ -11,6 +11,9 @@ public class Program {
     public static void main(String[] args) {
         NotesController notesController = new NotesController(new ConcreteNoteEditor(new NotesConsolePresenter(), new DatabaseContext(new NotesDatabase())));
         notesController.routeGetAll();
+
+        ConcreteNoteDeleter noteDeleter = new ConcreteNoteDeleter(new DatabaseContext(new NotesDatabase()));
+        notesController.routeDelete(1);
     }
 
 }
