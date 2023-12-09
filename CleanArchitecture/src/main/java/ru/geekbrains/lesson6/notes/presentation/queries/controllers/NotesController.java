@@ -9,6 +9,10 @@ public class NotesController extends Controller {
 
     private final NoteEditor notesEditor;
 
+    public NotesController(NoteDeleter noteDeleter) {
+        this.noteDeleter = noteDeleter;
+    }
+
     public NotesController(NoteEditor notesEditor){
         this.notesEditor = notesEditor;
     }
@@ -23,6 +27,9 @@ public class NotesController extends Controller {
 
     public void routeGetAll(){
         notesEditor.printAll();
+    }
+    public void routeDelete(int noteId) {
+        noteDeleter.deleteNote(noteId);
     }
 
 
