@@ -61,6 +61,10 @@ public class ConcreteNoteEditor implements NoteEditor {
     public Collection<Note> getAll() {
         return dbContext.getAll();
     }
+    @Override
+    public void deleteNote(int noteId) {
+        // Реализация удаления записи в базе данных или другие действия
+    }
 
 
 }
