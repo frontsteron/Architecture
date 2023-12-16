@@ -1,8 +1,9 @@
 const routes = {
-    "/" : "/pages/home.html",
-    "/settings" : "/pages/settings.html",
-    "/about" : "/pages/about.html",
-    404 : "/pages/404.html", 
+    "/": "/pages/home.html",
+    "/settings": "/pages/settings.html",
+    "/about": "/pages/about.html",
+    404: "/pages/404.html",
+    "/humor": "/pages/humor.html",
 }
 
 const route = (event) => {
