@@ -10,38 +10,51 @@ import java.util.Date;
 import java.util.List;
 
 public class BookingView implements View {
-
-    private Collection<ViewObserver> observers = new ArrayList<>();
+    private ViewObserver observer;
 
     @Override
     public void registerObserver(ViewObserver observer) {
-        observers.add(observer);
+        this.observer = observer;
     }
 
-    public void showTables(Collection<Table> tables){
+    @Override
+    public void showTables(Collection<Table> tables) {
         for (Table table: tables) {
             System.out.println(table);
         }
     }
 
     @Override
-    public void showReservationTableResult(int reservationNo) {
-        if (reservationNo > 0)
-            System.out.printf("Столик успешно забронирован. Номер вашей брони: #%d\n", reservationNo);
-        else
-            System.out.println("Не удалось забронировать столик. Повторите попытку позже.");
-
-    }
-
-    public void changeReservationTable(int oldReservation, Date reservationDate, int tableNo, String name){
-    }
-
-
-
-    public void reservationTable(Date orderDate, int tableNo, String name){
-        for (ViewObserver observer : observers){
-            observer.onReservationTable(orderDate, tableNo, name);
+    public void reservationTable(Date orderDate, int tableNumber, String nameClients) {
+        if (observer != null) {
+            observer.onReservetionTable(orderDate, tableNumber, nameClients);
         }
     }
 
+    @Override
+    public void showReservationTableResult(int reservationNo) {
+        if (reservationNo > 0) {
+            System.out.printf("Столик успешно забронирован. Номер вашей брони: #%d\n", reservationNo);
+        } else {
+            System.out.println("Не удалось забронировать столик. Повторите попытку позже.");
+        }
+    }
+
+    @Override
+    public void changeReservationTable(int oldReservation, Date reservationDate, int tableNumber, String nameClients) {
+        if (observer != null) {
+            observer.onUpdateReservetionTable(oldReservation, reservationDate, tableNumber, nameClients);
+        }
+    }
+
+    @Override
+    public void showСhangeReservationTable(int newReservationNo, int newNumberTable) {
+        if (newReservationNo > 0) {
+            System.out.printf(
+                    "Изменение брони прошло успешно. По номеру брони №%d изменен номер столика. Новый номер столика №%d\n",
+                    newReservationNo, newNumberTable);
+        } else {
+            System.out.println("Не удалось забронировать столик. Повторите попытку позже.");
+        }
+    }
 }

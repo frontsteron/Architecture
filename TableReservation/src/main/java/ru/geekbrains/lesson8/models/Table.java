@@ -6,6 +6,9 @@ import java.util.Locale;
 
 public class Table {
 
+    public int getNumber() {
+        return number;
+    }
     private static int counter;
     private final int no;
 
@@ -19,8 +22,11 @@ public class Table {
         return reservations;
     }
 
-    public int getNo() {
-        return no;
+    private final Collection<Reservation> reservations = new ArrayList<>();
+    private static int counter;
+    private final int number;
+    {
+        number = ++counter;
     }
 
     @Override

@@ -4,6 +4,8 @@ import ru.geekbrains.lesson8.models.TableService;
 import ru.geekbrains.lesson8.presenters.BookingPresenter;
 import ru.geekbrains.lesson8.presenters.Model;
 import ru.geekbrains.lesson8.views.BookingView;
+import ru.geekbrains.lesson8.models.TableModel;
+import ru.geekbrains.lesson8.presenters.View;
 
 import java.util.Date;
 

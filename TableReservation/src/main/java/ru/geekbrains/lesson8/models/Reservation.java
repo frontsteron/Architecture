@@ -10,13 +10,22 @@ public class Reservation {
     private Table table;
 
     private Date date;
-    private String name;
+    private String nameClients;
+    {
+        id = ++counter;
+    }
+
+    public Reservation(Table table, Date date, String nameClients) {
+        this.table = table;
+        this.date = date;
+        this.nameClients = nameClients;
+    }
 
     public int getId() {
         return id;
     }
 
-    public Date getDate() {
+       public Date getDate() {
         return date;
     }
 
