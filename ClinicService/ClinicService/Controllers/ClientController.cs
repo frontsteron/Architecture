@@ -12,7 +12,7 @@ namespace ClinicService.Controllers
     public class ClientController : ControllerBase
     {
 
-        private IClientRepository _clientRepository;
+        private readonly IClientRepository _clientRepository;
 
         public ClientController(IClientRepository clientRepository)
         {
@@ -22,28 +22,31 @@ namespace ClinicService.Controllers
         [HttpPost("create")]
         public IActionResult Create([FromBody] CreateClientRequest createRequest)
         {
-            Client client = new Client();
-            client.Document = createRequest.Document;
-            client.SurName = createRequest.SurName;
-            client.FirstName = createRequest.FirstName;
-            client.Patronymic = createRequest.Patronymic;
-            client.Birthday = createRequest.Birthday;
-            return Ok(_clientRepository.Create(client));
+            int res = _clientRepository.Create(new Client
+            {
+                Document = createRequest.Document,
+                SurName = createRequest.SurName,
+                FirstName = createRequest.FirstName,
+                Patronymic = createRequest.Patronymic,
+                Birthday = createRequest.Birthday,
+            });
+            return Ok(res);
         }
 
-        [HttpPut("edit")]
+        [HttpPut("update")]
         public IActionResult Update([FromBody] UpdateClientRequest updateRequest)
         {
-            Client client = new Client();
-            client.ClientId = updateRequest.ClientId;
-            client.Document = updateRequest.Document;
-            client.SurName = updateRequest.SurName;
-            client.FirstName = updateRequest.FirstName;
-            client.Patronymic = updateRequest.Patronymic;
-            client.Birthday = updateRequest.Birthday;
-            return Ok(_clientRepository.Update(client));
+            int res = _clientRepository.Update(new Client
+            {
+                ClientId = updateRequest.ClientId,
+                SurName = updateRequest.SurName,
+                FirstName = updateRequest.FirstName,
+                Patronymic = updateRequest.Patronymic,
+                Birthday = updateRequest.Birthday
+            });
+            return Ok(res);
         }
-
+        
 
         [HttpDelete("delete")]
         public IActionResult Delete([FromQuery] int clientId)
@@ -63,6 +66,6 @@ namespace ClinicService.Controllers
         {
             return Ok(_clientRepository.GetById(clientId));
         }
-
+        
     }
 }
