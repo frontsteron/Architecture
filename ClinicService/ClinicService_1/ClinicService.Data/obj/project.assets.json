@@ -50,7 +50,7 @@
   },
   "libraries": {
     "Microsoft.Extensions.ApiDescription.Client/7.0.2": {
-      "sha512": "gSObdZ5LVFpgkdY8Tt1RzVD+8Xd7SN95ePuPiceAZbRL/EHZzAVTiH2sNsRwHcuMBu7nlTpeMDUjJDUCQuvK0A==",
+      "sha512": "a0QeONf4B87xiOzs9sYKo+vZxjeAj6czOPIZwNLZoRonGKTOU+JGj/H41IZP05J8TgdApNXkrpT6gx2oPBolEg==",
       "type": "package",
       "path": "microsoft.extensions.apidescription.client/7.0.2",
       "files": [
@@ -69,7 +69,7 @@
       ]
     },
     "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
       "path": "newtonsoft.json/13.0.1",
       "files": [
@@ -84,6 +84,8 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",

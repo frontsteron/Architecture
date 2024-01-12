@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\sources\\gb\\arc\\group2\\lesson11\\ClinicService\\ClinicService\\ClinicService.csproj": {}
+    "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_11\\ClinicService\\ClinicService.csproj": {}
   },
   "projects": {
-    "C:\\sources\\gb\\arc\\group2\\lesson11\\ClinicService\\ClinicService\\ClinicService.csproj": {
+    "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_11\\ClinicService\\ClinicService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sources\\gb\\arc\\group2\\lesson11\\ClinicService\\ClinicService\\ClinicService.csproj",
+        "projectUniqueName": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_11\\ClinicService\\ClinicService.csproj",
         "projectName": "ClinicService",
-        "projectPath": "C:\\sources\\gb\\arc\\group2\\lesson11\\ClinicService\\ClinicService\\ClinicService.csproj",
-        "packagesPath": "C:\\Users\\EvilDracur\\.nuget\\packages\\",
-        "outputPath": "C:\\sources\\gb\\arc\\group2\\lesson11\\ClinicService\\ClinicService\\obj\\",
+        "projectPath": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_11\\ClinicService\\ClinicService.csproj",
+        "packagesPath": "C:\\Users\\Sergey\\.nuget\\packages\\",
+        "outputPath": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_11\\ClinicService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\EvilDracur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\Sergey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,9 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
-          "C:\\sources\\cert\\sber\\gost_eurasia-assistance": {},
-          "C:\\sources\\cert\\sber\\gost_eurasia-assistance\\Linux": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,9 +46,13 @@
             },
             "Microsoft.Data.Sqlite": {
               "target": "Package",
-              "version": "[7.0.14, )"
+              "version": "[7.0.11, )"
             },
             "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
               "version": "[6.5.0, )"
             }
@@ -79,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
         }
       }
     }
