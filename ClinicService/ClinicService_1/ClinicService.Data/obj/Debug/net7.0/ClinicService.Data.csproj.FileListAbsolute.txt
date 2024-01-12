@@ -1,0 +1,12 @@
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\bin\Debug\net7.0\ClinicService.Data.deps.json
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\bin\Debug\net7.0\ClinicService.Data.dll
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\bin\Debug\net7.0\ClinicService.Data.pdb
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.csproj.AssemblyReference.cache
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.AssemblyInfoInputs.cache
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.AssemblyInfo.cs
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.csproj.CoreCompileInputs.cache
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.dll
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\refint\ClinicService.Data.dll
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.pdb
+C:\sources\gb\arc\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ref\ClinicService.Data.dll
