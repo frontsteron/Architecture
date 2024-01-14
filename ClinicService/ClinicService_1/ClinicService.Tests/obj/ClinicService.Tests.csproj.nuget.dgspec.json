@@ -1,42 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService.Tests\\ClinicService.Tests.csproj": {}
+    "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicServiceTest\\ClinicServiceTest.csproj": {}
   },
   "projects": {
-    "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService.Tests\\ClinicService.Tests.csproj": {
+    "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicServiceTest\\ClinicServiceTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService.Tests\\ClinicService.Tests.csproj",
-        "projectName": "ClinicService.Tests",
-        "projectPath": "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService.Tests\\ClinicService.Tests.csproj",
-        "packagesPath": "C:\\Users\\EvilDracur\\.nuget\\packages\\",
-        "outputPath": "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService.Tests\\obj\\",
+        "projectUniqueName": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicServiceTest\\ClinicServiceTest.csproj",
+        "projectName": "ClinicServiceTest",
+        "projectPath": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicServiceTest\\ClinicServiceTest.csproj",
+        "packagesPath": "C:\\Users\\Sergey\\.nuget\\packages\\",
+        "outputPath": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicServiceTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\EvilDracur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\Sergey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
-          "C:\\sources\\cert\\sber\\gost_eurasia-assistance": {},
-          "C:\\sources\\cert\\sber\\gost_eurasia-assistance\\Linux": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService\\ClinicService.csproj": {
-                "projectPath": "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService\\ClinicService.csproj"
+              "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicService\\ClinicService.csproj": {
+                "projectPath": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicService\\ClinicService.csproj"
               }
             }
           }
@@ -48,32 +41,32 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.6.0, )"
+              "version": "[17.7.2, )"
             },
             "Moq": {
               "target": "Package",
-              "version": "[4.20.70, )"
+              "version": "[4.20.69, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.0, )"
+              "version": "[6.0.0, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.5.1, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.5, )"
+              "version": "[2.5.1, )"
             }
           },
           "imports": [
@@ -92,25 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService\\ClinicService.csproj": {
+    "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicService\\ClinicService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService\\ClinicService.csproj",
+        "projectUniqueName": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicService\\ClinicService.csproj",
         "projectName": "ClinicService",
-        "projectPath": "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService\\ClinicService.csproj",
-        "packagesPath": "C:\\Users\\EvilDracur\\.nuget\\packages\\",
-        "outputPath": "C:\\sources\\gb\\arc\\group2\\lesson12\\ClinicService\\ClinicService\\obj\\",
+        "projectPath": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicService\\ClinicService.csproj",
+        "packagesPath": "C:\\Users\\Sergey\\.nuget\\packages\\",
+        "outputPath": "H:\\GeekBrains\\26-SoftwareArchitecture\\Homeworks\\HW_SoftArch_12\\ClinicService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\EvilDracur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Users\\Sergey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,9 +107,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
-          "C:\\sources\\cert\\sber\\gost_eurasia-assistance": {},
-          "C:\\sources\\cert\\sber\\gost_eurasia-assistance\\Linux": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -145,9 +131,13 @@
             },
             "Microsoft.Data.Sqlite": {
               "target": "Package",
-              "version": "[7.0.14, )"
+              "version": "[7.0.11, )"
             },
             "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
               "version": "[6.5.0, )"
             }
@@ -171,7 +161,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
         }
       }
     }
